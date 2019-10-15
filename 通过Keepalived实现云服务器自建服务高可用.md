@@ -50,7 +50,7 @@
 |ymq-srv-1|通用型N3|sbt-vpc|private_a|8核32G|10.32.0.2|ha-sg|CentOS Linux release 7.7.1908 (Core)|密码|
 |ymq-srv-2|通用型N3|sbt-vpc|private_a|8核32G|10.32.0.3|ha-sg|CentOS Linux release 7.7.1908 (Core)|密码|
 
-## 安装配置Nginx
+## 1.7 安装配置Nginx
 为了便于测试虚拟IP漂移效果，在主、备云主机上安装Nginx，并修改 /usr/share/nginx/html/index.html内容来区分主、备云主机。
 ```
 [root@sbt-basition ~]# curl 10.34.0.2
@@ -59,7 +59,7 @@ Master
 Slave
 ```
 
-# 1.6 准备金山云OpenAPI环境
+## 1.8 准备金山云OpenAPI环境
 两台云服务器都需要能访问金山云OpenAPI，配置过程请参见[《金山云Python SDK入门指南》](
 https://github.com/ksc-sbt/keepalived-ha/blob/master/%E9%87%91%E5%B1%B1%E4%BA%91Python%20SDK%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97.md)
 
